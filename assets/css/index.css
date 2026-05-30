@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Zen+Dots&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Zen+Dots&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 
 :root {
     --color-primary: #00BE8A;
@@ -199,7 +199,7 @@ body {
     color: var(--font-color);
     font-family: var(--font-fra);
     font-size: var(--font-size58);
-    font-weight: bold;
+    font-weight: 900;
 }
 #theme .theme__inner .theme__subtitle {
     color: var(--color-primary);
@@ -215,7 +215,7 @@ body {
     font-size: var(--font-size24);
     letter-spacing: 0.48px;
     font-family: var(--font-maru);
-    font-weight: 450;
+    font-weight: 400;
     text-align: center;
 }
 #theme .theme__body strong {
@@ -267,7 +267,7 @@ body {
     font-family: var(--font-kaku);
     color: var(--font-color);
     font-size: var(--font-size18);
-    font-weight: 500;
+    font-weight: 400;
 }
 #event-info .event-info__image-wrap{
     margin-top: 30px;
@@ -350,21 +350,20 @@ body {
 }
 #program .program__card-title {
     font-size: var(--font-size32);
-    font-weight: 900;
+    font-weight: 500;
     font-family: var(--font-maru);
     color: var(--font-color);
 }
 #program .program__card .program__card-text {
     margin-top: 16px;
     font-size: var(--font-size18);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--font-color);
     font-family: var(--font-maru);
 }
 .program__card-btn {
     font-family: var(--font-maru);
     color: var(--font-color);
-    font-weight: 700;
     margin-top: 30px;
     display: inline-flex;
     align-items: center;
@@ -373,8 +372,8 @@ body {
     border: none;
     border-radius: 999px;
     padding: 10px 40px;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: var(--font-size24);
+    font-weight: 500;
     cursor: pointer;
 }
 .swiper-pagination {
@@ -396,7 +395,7 @@ body {
     padding-left: 80px;
 }
 #spot .spot__header .spot__label {
-    padding-top: 60px;
+    padding-top: 40px;
     font-family: var(--font-maru);
     color: var(--color-primary);
     font-size: var(--font-size18);
@@ -422,7 +421,7 @@ body {
     margin-top: 40px;
     color: var(--font-color);
     font-size: var(--font-size18);
-    font-weight: 500;
+    font-weight: 400;
     font-family: var(--font-maru);
 }
 #spot .spot__btn{
@@ -437,6 +436,7 @@ body {
     font-size: var(--font-size24);
     font-weight: 400;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 /* FOOTER */
@@ -458,7 +458,7 @@ footer {
     font-size: var(--font-size18);
     color: #ffffff;
     margin-bottom: 24px;
-    font-weight: 300;
+    font-weight: 200;
     font-family: var(--font-maru);
 }
 .footer__nav-list {
@@ -474,7 +474,7 @@ footer {
     font-size: var(--font-size16);
     color: var(--color-bg);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 450;
 }
 .footer__nav-link:hover {
     transition: 0.5s ease;
@@ -512,7 +512,7 @@ footer {
 
     /* THEME MOBILE */
     #theme {
-        padding: 80px 0 80px 0;
+        padding: 80px 20px 80px 20px;
     }
     #theme .theme__inner .theme__title{
         font-size: var(--font-size36);
@@ -534,7 +534,7 @@ footer {
     /* EVENT INFO MOBILE*/
    
     #event-info{
-        padding: 0 10px 60px 10px;
+        padding: 0 20px 60px 20px;
     }
     #event-info .event-info__header .event-info__label {
         font-size: var(--font-size14);
@@ -590,7 +590,7 @@ footer {
     /* PROGRAM MOBILE */
 
     #program {
-        padding: 80px 0 80px 0;
+        padding: 80px 20px 80px 20px;
     }
     #program .program__header{
         padding-left: 10px;
@@ -631,15 +631,17 @@ footer {
 
     /* SPOT */
     #spot {
-        padding: 0 0 0 20px;
+        padding: 36px 0 0 20px;
     }
     #spot .spot__left {
         padding-left: 0px;
     }
     #spot .spot__header .spot__label {
+        text-align: center;
         font-size: var(--font-size18);
     }
     #spot .spot__header .spot__title {
+        text-align: center;
         font-size: var(--font-size38);
     }
     #spot .spot__header .spot__title span {
@@ -653,11 +655,9 @@ footer {
         
     } 
     #spot .spot__content{
+        text-align: center;
         margin-top: 40px;
-        color: var(--font-color);
         font-size: var(--font-size18);
-        font-weight: 500;
-        font-family: var(--font-maru);
     }
     #spot .spot__btn{
         margin-top: 30px;
@@ -665,13 +665,13 @@ footer {
         font-size: var(--font-size18);
     }
     #spot .spot__right{
-       margin-top: 40px;
+       margin-top: 60px;
     }
 
     /* FOOTER MOBILE*/
     footer {
         background-color: var(--color-primary);
-        padding:80px 10px 0 10px;
+        padding:80px 20px 0 20px;
     }
     .footer__nav-label {
         font-size: var(--font-size18);
