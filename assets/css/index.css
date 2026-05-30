@@ -366,6 +366,13 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
+.swiper-pagination {
+    position: relative;
+    margin-top:120px;
+}
+.swiper-pagination-bullet {
+    background-color: var(--color-primary);
+}
 
 /* FOOTER */
 
@@ -440,9 +447,8 @@ footer {
 
     /* THEME MOBILE */
     #theme {
-        padding: 80px 0;
+        padding: 80px 0 80px 0;
     }
-
     #theme .theme__inner .theme__title{
         font-size: var(--font-size36);
     }
@@ -451,6 +457,7 @@ footer {
         font-size: var(--font-size20);
         line-height: 44px;
         letter-spacing: 0.20px;
+        margin-top: 30px;
     }
     #theme .theme__body strong {
         font-weight: bold;
@@ -462,7 +469,7 @@ footer {
     /* EVENT INFO MOBILE*/
    
     #event-info{
-        padding: 0 10px 80px 10px;
+        padding: 0 10px 60px 10px;
     }
     #event-info .event-info__header .event-info__label {
         font-size: var(--font-size14);
@@ -516,6 +523,7 @@ footer {
     }
 
     /* PROGRAM MOBILE */
+
     #program {
         padding: 80px 0 80px 0;
     }
@@ -523,7 +531,7 @@ footer {
         padding-left: 10px;
     }
     #program .swiper-container {
-    margin-top: 60px;
+    margin-top: 70px;
     }
     #program .swiper-slide{
         display: flex;
@@ -550,6 +558,10 @@ footer {
     .program__card-btn {
         padding: 10px 40px;
         font-size: 18px;
+    }
+    .swiper-pagination {
+        position: relative;
+        margin-top:60px;
     }
 
     /* FOOTER MOBILE*/
