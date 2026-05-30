@@ -330,7 +330,12 @@ body {
     font-weight: 700;
 }
 #program .swiper-container {
-    margin-top: 64px;
+    margin-top: 84px;
+}
+#program .program__card-image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 #program .program__card-title {
     font-size: var(--font-size32);
@@ -491,12 +496,13 @@ footer {
         display: block;
         text-align: center;
         justify-content: center;
+        margin-top: 40px;
     }
     #event-info .event-info__address-text {
         font-size: var(--font-size14);
     }
     #event-info .event-info__station {  
-        font-size: var(--font-size14);
+        font-size: var(--font-size16);
     }
     #event-info .event-info__stations {
         justify-content: center;
@@ -507,6 +513,43 @@ footer {
         background-color: var(--color-primary);
         border-radius: 50%;
         flex-shrink: 0;
+    }
+
+    /* PROGRAM MOBILE */
+    #program {
+        padding: 80px 0 80px 0;
+    }
+    #program .program__header{
+        padding-left: 10px;
+    }
+    #program .swiper-container {
+    margin-top: 60px;
+    }
+    #program .swiper-slide{
+        display: flex;
+        justify-content: center;
+    }
+    #program .program__header .program__label {
+        font-size: var(--font-size14);
+    }
+    #program .program__header .program__title {
+        font-size: var(--font-size36);
+    }
+    #program .program__card-image{
+        width: auto;
+        height: 200px;
+    }
+    #program .program__card-title {
+        font-size: var(--font-size24);
+        margin-top: 12px;
+    }
+    #program .program__card .program__card-text {
+        margin-top: 16px;
+        font-size: var(--font-size16);
+    }
+    .program__card-btn {
+        padding: 10px 40px;
+        font-size: 18px;
     }
 
     /* FOOTER MOBILE*/
