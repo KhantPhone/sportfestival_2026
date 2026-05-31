@@ -383,7 +383,7 @@ body {
     color: var(--font-color);
     font-family: var(--font-maru);
     letter-spacing: 0.6px;
-    font-weight: 350;
+    font-weight: 400;
     line-height: 35px;
     font-size: var(--font-size18);
 }
@@ -912,7 +912,7 @@ footer {
     }
     #guide .guide__main-body {
         margin-top: 24px;
-        font-size: var(--font-size16);
+        font-size: var(--font-size20);
     }
      #guide .guide__sub-content-wrapper {
         height: auto;
