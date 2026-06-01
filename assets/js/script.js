@@ -1,6 +1,12 @@
 
+//HEADER
+const navMenu = document.getElementById('navMenu');
+const hamburger = document.getElementById('navHamburger');
 
-
+hamburger.addEventListener('click', () => {
+    const open = navMenu.classList.toggle('is-open');
+    hamburger.setAttribute('aria-expanded', open);
+});
 // MARQUEE
 document.querySelectorAll('.marquee__track').forEach(track => {
     track.innerHTML += track.innerHTML;

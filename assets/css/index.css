@@ -137,7 +137,101 @@ body {
 /* LOADER */
 
 /* HEADER */
-
+header {
+    overflow: hidden;
+}
+header .nav__logo-pc {
+    display: none;
+}
+header .nav__menu-inner {
+    width: 100%;
+    padding: 120px 70px;
+    background-color: #F5F5F5;
+    border-radius: 0px 0px 50px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    pointer-events: none;
+    z-index: 99;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+header .nav__menu.is-open .nav__menu-inner {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+header .nav__toggle button {
+    z-index: 100;
+    position: fixed;
+    top: 4%;
+    right: 3%;
+    background: var(--color-bg);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+header .nav__hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+header .nav__hamburger-bar {
+    display: block;
+    width: 40px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    transition: transform 0.6s ease;
+}
+header .nav__menu.is-open .nav__hamburger-bar--1 {
+    transform: translateY(6px) rotate(45deg);
+}
+header .nav__menu.is-open .nav__hamburger-bar--2 {
+    transform: translateY(-6px) rotate(-45deg);
+}
+header .nav__menu-content {
+    padding-left: 110px;
+}
+header .nav__group-title {
+    font-size: var(--font-size18);
+    color: var(--font-color);
+    opacity: 0.8;
+    margin-bottom: 24px;
+    font-weight: 200;
+    font-family: var(--font-maru);
+    pointer-events: none;
+}
+header .nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-maru);
+    margin-top: 20px;
+}
+header .nav__link {
+    display: inline-block;
+    font-size: var(--font-size16);
+    color: var(--color-bg);
+    text-decoration: none;
+    font-weight: 450;
+    color: var(--font-color);
+    margin-top: 20px;
+}
+header .nav__link:hover {
+    transition: 0.5s ease;
+    opacity: 0.8;
+}
+/* MARQUEE */
 .marquee {
     background-color: var(--color-primary);
     overflow: hidden;
@@ -847,7 +941,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding: 40px 0;
 }
-.footer__bottom .footer__inner {
+.footer__bottom .footer__bottom-inner {
     display: flex;
     justify-content: space-between;
     font-size: var(--font-size14);
@@ -855,12 +949,72 @@ footer {
     margin: 0;
     font-family: var(--font-maru);
 }
-
+.footer__bottom .footer__bottom-inner a {
+    color: var(--color-bg);
+    transition: 0.5s ease;
+}
+.footer__bottom .footer__bottom-inner a:hover {
+    opacity: 0.8;
+}
 /* MOBILE */
 
 @media screen and (max-width: 998px) {
 
+    /* HEADER MOBILE */
+    header .nav__logo-pc{
+        display: none;
+    }
+    header .nav__menu-inner {
+        width: 100%;
+        padding:70px 20px;
+        background-color: #F5F5F5;
+        border-radius: 0px 0px 30px 30px;
+    }
+    
+    header .nav__toggle button {
+        position: fixed;
+        top: 4%;
+        right: 3%;
+        background: var(--color-bg);
+        width: 40px;
+        height: 40px;
+    }
+    header .nav__hamburger-icon {
+        gap: 3px;
+    }
+    header .nav__hamburger-bar {
+        display: block;
+        width: 20px;
+        height: 3px;
+        border-radius: 10px;
+    }
+    header .nav__menu.is-open .nav__hamburger-bar--1 {
+        transform: translateY(3px) rotate(45deg);
+    }
+    header .nav__menu.is-open .nav__hamburger-bar--2 {
+        transform: translateY(-3px) rotate(-45deg);
+    }
+    header .nav__menu-content {
+        padding-left: 0px;
+    }
+    header .nav__group-title {
+        margin-top: 50px;   
+    }
+    header .nav__list {
+        margin-top: 0px;  
+    }
+    header .nav__item:first-child .nav__link {
+    margin-top: 24px;
+    }
+    header .nav__link {
+        margin-top: 16px;
+    }
+    header .nav__groups{
+        padding: 0 40px;
+    }
+
     /* MARQUEE MOBILE */
+
     .marquee {
         height: 100px;
     }
@@ -873,6 +1027,7 @@ footer {
     }
 
     /* THEME MOBILE */
+
     #theme {
         padding: 80px 20px 80px 20px;
     }
