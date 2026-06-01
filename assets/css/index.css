@@ -415,9 +415,6 @@ body {
     cursor: pointer;
      position: relative;
 }
-#guide .guide__sub-content:hover {
-
-}
 #guide .guide__sub-content.active{
     background: var(--color-bg);
 }
@@ -433,9 +430,11 @@ body {
     border-radius: 0 4px 4px 0;
 }
 #guide .guide__sub-content img{
-    width: 132px;
-    height: 91px;
+    object-fit: cover;
+    aspect-ratio : 16 / 9;
     border-radius: 20px;
+    width: 160px;
+    height: auto;
 }
 #guide .guide__sub-content-info{
     margin-left: 16px;
@@ -541,6 +540,75 @@ body {
     margin-top: 60px;
 }
 
+/*FUN*/
+#fun {
+    padding: 0 120px 120px 120px;
+}
+#fun .fun__inner {
+    background: url(../images/icons/Stars.svg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    padding: 40px 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#fun .fun__content {
+    position: relative;
+    z-index: 2;
+}
+#fun .fun__content-title {
+    font-size: var(--font-size34);
+    font-family: var(--font-kaku);
+    font-weight: 700;
+    color: var(--color-bg);
+}
+#fun .fun__question {
+    margin-left: 6px;
+    font-family: var(--font-maru);
+    color: var(--color-secondary);
+    transform: rotate(9.634deg);
+    font-size: var(--font-size64);
+    display: inline-block;
+    font-weight: 700;
+}
+#fun .fun__content-sub-text {
+    margin-top: 16px;
+    font-size: var(--font-size18);
+    font-weight: 400;
+    color: var(--color-bg);
+    opacity: 0.9;
+}
+#fun .fun__btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 18px 40px;
+    background-color: var(--color-bg);
+    color: var(--font-color);
+    border-radius: 25px;
+    font-size: var(--font-size20);
+    font-family: var(--font-maru);
+    font-weight: 600;
+    text-decoration: none;
+
+}
+#fun .fun__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+}
+#fun .fun__image img {
+    height: 100%;
+ 
+}
+
 /* SPOT */
 #spot {
     background:url(../images/icons/grid-pattern.svg), var(--light--background);
@@ -563,7 +631,7 @@ body {
     font-size: var(--font-size44);
     font-weight: 700;
 }
-#spot .spot__header .spot__title span {
+#spot .spot__header .spot__title .spot__question {
     color: var(--color-primary);
     transform: rotate(11.356deg);
     font-size: var(--font-size60);
@@ -991,6 +1059,7 @@ footer {
     }
 
     /* MAP MOBILE */
+
     #map {
         padding: 0 20px 80px 20px;
     }
@@ -1003,6 +1072,52 @@ footer {
     #map .map__header .map__title {
         font-size: var(--font-size36);
     }
+
+    /* FUN MOBILE */
+
+    #fun {
+        padding: 0 20px 80px 20px;
+    }
+    #fun .fun__inner {   
+        padding: 40px 40px;
+    }
+    #fun .fun__content-title {
+        font-size: var(--font-size26);
+    }
+    #fun .fun__question {
+        font-size: var(--font-size40);
+    }
+    #fun .fun__content-sub-text {
+        margin-top: 26px;
+        font-size: var(--font-size16);
+    }
+    #fun .fun__btn {
+        margin-top: 20px;
+        padding: 12px 30px;
+        background-color: var(--color-bg);
+        color: var(--font-color);
+        border-radius: 25px;
+        font-size: var(--font-size16);
+        font-family: var(--font-maru);
+        font-weight: 500;
+        text-decoration: none;
+
+    }
+    #fun .fun__image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        z-index: 1;
+    }
+    #fun .fun__image img {
+        height: 100%;
+    
+    }
+    #fun .fun__image {
+        opacity: 0.2;
+    }
+
     /* SPOT MOBILE*/
 
     #spot {
@@ -1019,7 +1134,7 @@ footer {
         text-align: center;
         font-size: var(--font-size38);
     }
-    #spot .spot__header .spot__title span {
+    #spot .spot__header .spot__title .spot__question {
         color: var(--color-primary);
         transform: rotate(11.356deg);
         font-size: var(--font-size50);
