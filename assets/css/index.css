@@ -976,23 +976,23 @@ footer {
         top: 4%;
         right: 3%;
         background: var(--color-bg);
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     header .nav__hamburger-icon {
-        gap: 3px;
+        gap: 4px;
     }
     header .nav__hamburger-bar {
         display: block;
-        width: 20px;
-        height: 3px;
+        width: 25px;
+        height: 4px;
         border-radius: 10px;
     }
     header .nav__menu.is-open .nav__hamburger-bar--1 {
-        transform: translateY(3px) rotate(45deg);
+        transform: translateY(4px) rotate(45deg);
     }
     header .nav__menu.is-open .nav__hamburger-bar--2 {
-        transform: translateY(-3px) rotate(-45deg);
+        transform: translateY(-4px) rotate(-45deg);
     }
     header .nav__menu-content {
         padding-left: 0px;
