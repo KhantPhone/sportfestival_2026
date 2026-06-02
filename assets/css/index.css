@@ -627,7 +627,7 @@ header .badge .spinner {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    color: var(--color-bg);
     font-size: var(--font-size40);
     box-sizing: border-box;
     font-family: var(--font-zen);
@@ -647,11 +647,10 @@ header .badge .spinner {
 }
 
 .team-info__table td {
-    width: 500px;
+    width: 600px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    color: #432C24;
+    color: var(--font-color);
     line-height: 1.6;
-    background-color: var(--color-bg);
 }
 
 .team-info__table tr:last-child td {
@@ -669,9 +668,10 @@ header .badge .spinner {
     font-family: var(--font-maru);
 }
 .team-department {
-    padding: 0 20px 0 20px;
+    color: var(--font-color);
+    padding:30px 40px;
     font-family: var(--font-maru);
-    font-size: var(--font-size16);
+    font-size: var(--font-size20);
 }
 .team-color.team-blue {
     color: #3A86FF;
@@ -1383,10 +1383,10 @@ footer {
         font-size: var(--font-size30);
     }
     .team-department{
-        font-size: var(--font-size14);
+        font-size: var(--font-size16);
     }
     .team-info__table td {
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
     .team-info__table td:first-child {
         width: 120px;
