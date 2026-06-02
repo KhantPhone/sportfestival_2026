@@ -674,6 +674,11 @@ header .badge .spinner {
     font-family: var(--font-maru);
     font-size: var(--font-size20);
 }
+.team-department ul {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
 .team-color.team-blue {
     color: #3A86FF;
 }
@@ -1384,7 +1389,7 @@ footer {
         border-radius: 30px;
     }
     .team-color {
-        font-size: var(--font-size30);
+        font-size: var(--font-size34);
     }
     .team-department{
         font-size: var(--font-size18);
