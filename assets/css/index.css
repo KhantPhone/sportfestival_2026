@@ -668,6 +668,7 @@ header .badge .spinner {
     font-family: var(--font-maru);
 }
 .team-department {
+    font-weight: 450;
     color: var(--font-color);
     padding:30px 40px;
     font-family: var(--font-maru);
@@ -984,6 +985,9 @@ footer {
     /* HEADER MOBILE */
     header .nav__logo-pc{
         display: none;
+    }
+    header .nav__logo-sp{
+        display: block;
     }
     header .nav__menu-inner {
         width: 100%;
@@ -1383,7 +1387,7 @@ footer {
         font-size: var(--font-size30);
     }
     .team-department{
-        font-size: var(--font-size16);
+        font-size: var(--font-size18);
     }
     .team-info__table td {
         padding: 20px 20px;
