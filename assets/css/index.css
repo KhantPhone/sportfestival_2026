@@ -1179,13 +1179,13 @@ footer {
         left: -40px;
     }
     .mv-date {
-        width: 90px;
-        height: 90px;
-        left: 10%;
+        width: 100px;
+        height: 100px;
+        left: 8%;
         bottom: -100px;
     }
     .badge text {
-        font-size: var(--font-size50);
+        font-size: var(--font-size54);
         letter-spacing: 1px;
     }
     .date-bg {
