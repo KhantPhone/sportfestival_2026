@@ -1239,7 +1239,7 @@ footer {
     /* EVENT INFO MOBILE*/
    
     #event-info{
-        padding: 0 20px 60px 20px;
+        padding: 0 20px 80px 20px;
     }
     #event-info .event-info__header .event-info__label {
         font-size: var(--font-size14);
@@ -1296,12 +1296,11 @@ footer {
     }
 
     /* GUIDE MOBILE */
-    
-    #guide {
-    padding: 0 0 120px 0;
-    }
     #guide .guide__header {
         text-align: center;
+    }
+    #guide .header-block{
+        display: block;
     }
     #guide .guide__header br {
         display: none;
@@ -1627,6 +1626,9 @@ footer {
     }
     #spot .spot__left {
         padding-left: 0px;
+    }
+    #spot .header-block{
+        display: block;
     }
     #spot .spot__header .spot__label {
         text-align: center;
