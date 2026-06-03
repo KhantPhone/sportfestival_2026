@@ -135,6 +135,7 @@ const detailTitle = document.getElementById('detailTitle');
 const detailImg = document.getElementById('detailImg');
 const detailItems = document.getElementById('detailItems');
 
+//FUN
 const funData = {
     "応援派": {
         title: "応援派の楽しみ方",
