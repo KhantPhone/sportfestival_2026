@@ -1380,7 +1380,7 @@ footer {
         margin-top: 16px;
         font-size: var(--font-size16);
     }
-        .program__card-btn {
+    .program__card-btn {
         font-family: var(--font-maru);
         color: var(--font-color);
         margin-top: 30px;
@@ -1396,6 +1396,7 @@ footer {
         font-size: var(--font-size20);
         font-weight: 500;
         cursor: pointer;
+        margin-right: 0px;
     }
     .program__card-btn-icon {
         margin-left: 20px;
