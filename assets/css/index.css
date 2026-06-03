@@ -1392,7 +1392,7 @@ footer {
         color: var(--color-bg);
         border: none;
         border-radius: 999px;
-        padding: 10px 40px;
+        padding: 10px 30px;
         font-size: var(--font-size20);
         font-weight: 500;
         cursor: pointer;
