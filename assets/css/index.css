@@ -443,12 +443,14 @@ header .nav__link {
     color: var(--color-primary);
     font-size: var(--font-size18);
     font-weight: 900;
+    text-align: center;
 }
 #event-info .event-info__header .event-info__title {
     font-family: var(--font-maru);
     color: var(--font-color);
     font-size: var(--font-size58);
     font-weight: 700;
+    text-align: center;
 }
 #event-info .event-info__details .event-info__venue {
     font-size: var(--font-size66);
@@ -820,12 +822,14 @@ header .nav__link {
     color: var(--color-primary);
     font-size: var(--font-size18);
     font-weight: 900;
+    text-align: center;
 }
 #program .program__header .program__title {
     font-family: var(--font-maru);
     color: var(--font-color);
     font-size: var(--font-size58);
     font-weight: 700;
+    text-align: center;
 }
 #program .swiper-container {
     margin-top: 90px;
@@ -881,12 +885,14 @@ header .nav__link {
     color: var(--color-primary);
     font-size: var(--font-size18);
     font-weight: 900;
+    text-align: center;
 }
 #map .map__header .map__title {
     font-family: var(--font-maru);
     color: var(--font-color);
     font-size: var(--font-size58);
     font-weight: 700;
+    text-align: center;
 }
 #map .map__content {
     margin-top: 100px;
