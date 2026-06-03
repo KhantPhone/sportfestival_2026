@@ -1552,8 +1552,8 @@ footer {
     #map .map__content-img-sp {
         display: block;
     }
-    #map .map__header br{
-        display: block;
+    #map .map__content  {
+        margin-top: 56px;
     }
     #map .map__header .map__label {
         font-size: var(--font-size14);
