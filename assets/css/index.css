@@ -391,7 +391,7 @@ header .nav__link {
 .dotted__pattern{
     /* PATTERN BACKGROUND IMAGE */
      background: url(../images/icons/Mathematics.svg);
-     background-size: cover;
+     background-size: fixed;
      overflow: hidden;
 
 }
@@ -1281,72 +1281,219 @@ footer {
     }
 
     /* GUIDE MOBILE */
-
+    
     #guide {
-        padding: 0 20px 60px 20px;
+    padding: 0 0 120px 0;
     }
-    #guide .guide__header br{
-        display: block;
+    #guide .guide__header {
+        text-align: center;
+    }
+    #guide .guide__header br {
+        display: none;
     }
     #guide .guide__header .guide__label {
-        font-size: var(--font-size14);
+        font-family: var(--font-maru);
+        color: var(--color-primary);
+        font-size: var(--font-size18);
+        font-weight: 900;
     }
     #guide .guide__header .guide__title {
-        font-size: var(--font-size36);
+        font-family: var(--font-maru);
+        color: var(--font-color);
+        font-size: var(--font-size58);
+        font-weight: 700;
     }
     #guide .guide__content {
-        margin-top: 58px;
+        margin-top: 64px;
+    }
+    #guide .guide__content-image-wrap {
+        position: relative;
+        aspect-ratio: 16 / 9;
+    }
+    #guide .guide__content-image-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 16px;
     }
     #guide .guide__main-num {
         position: absolute;
-        bottom: 8px; right: 16px;
-        font-size: 36px;
+        bottom: 12px; right: 16px;
+        font-size: 64px;
+        font-weight: 700;
+        color: var(--color-secondary);
+        text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+        pointer-events: none;
     }
     #guide .guide__content-left {
-        padding: 50px 20px 50px 20px;
+        padding: 40px 70px 40px 70px;
+        border: 1px solid rgba(67, 44, 36, 0.20);
+        background-color: var(--color-bg);
     }
     #guide .guide__main-title {
         margin-top: 40px;
-        font-size: var(--font-size28);
+        color: var(--font-color);
+        font-family: var(--font-maru);
+        font-size: var(--font-size40);
+        font-weight: 700;
     }
     #guide .guide__main-body {
         margin-top: 24px;
-        font-size: var(--font-size20);
+        color: var(--font-color);
+        font-family: var(--font-maru);
+        letter-spacing: 0.6px;
+        font-weight: 400;
+        line-height: 35px;
+        font-size: var(--font-size18);
     }
-     #guide .guide__sub-content-wrapper {
-        height: auto;
-        overflow-y: visible;
+    #guideMainContent.fading .guide__content-image-wrap img,
+    #guideMainContent.fading .guide__main-title,
+    #guideMainContent.fading .guide__main-body {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    #guideMainContent .guide__content-image-wrap img,
+    #guideMainContent .guide__main-title,
+    #guideMainContent .guide__main-body {
+        transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+    #guide .guide__sub-content-wrapper {
+        height: 700px;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+    #guide .guide__sub-content-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    #guide .guide__sub-content {
+        border-top: 1px solid rgba(67, 44, 36, 0.20);
+        border-bottom: 1px solid rgba(67, 44, 36, 0.20);
+        background-color: var(--light--background);
+        cursor: pointer;
+        position: relative;
+    }
+    #guide .guide__sub-content.active {
+        background: var(--color-bg);
     }
     #guide .guide__sub-content.active::before {
         content: '';
         position: absolute;
         left: 0;
-        top:50%;
+        top: 50%;
         transform: translateY(-50%);
-        width: 4px;
-        height: 40%;
+        width: 6px;
+        height: 60%;
         background-color: var(--color-primary);
         border-radius: 0 4px 4px 0;
     }
-    #guide .guide__sub-content {
-        padding: 28px 20px 28px;
-        border: 1px solid rgba(67, 44, 36, 0.20);
+    #guide .guide__sub-content img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 20px;
+        height: 600px;
+        
     }
-    #guide .guide__sub-content img{
-        width: 100px;
-        height: 60px;
-        border-radius: 10px;
-    }
-    #guide .guide__sub-content-info{
-        margin-left: 16px;
+    #guide .guide__sub-content-info {
+        margin-left: 160px;
     }
     #guide .guide__sub-num {
-        font-size: var(--font-size20);
+        font-size: var(--font-size22);
+        color: var(--color-primary);
+        font-family: var(--font-maru);
+        font-weight: 450;
+        letter-spacing: 0.48px;
     }
-    #guide .guide__sub-title { 
-        font-size: var(--font-size18);
+    #guide .guide__sub-title {
+        font-family: var(--font-maru);
+        font-size: var(--font-size20);
+        font-weight: 450;
+        line-height: 25px;
+        letter-spacing: 0.4px;
+        color: var(--font-color);
+        margin-top: 18px;
+    }
+    .accordion-guide .accordion-item {
+        border: none;
+        border-bottom: 1px solid rgba(67, 44, 36, 0.20);
+    }
+    .accordion-guide .accordion-button {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px;
+        background-color: var(--light--background);
+        font-family: var(--font-maru);
+        box-shadow: none;
+    }
+    .accordion-guide .accordion-button:not(.collapsed) {
+        background-color: var(--color-bg);
+        box-shadow: none;
+        color: var(--font-color);
+    }
+    .accordion-guide .accordion-button::after {
+        display: none;
+    }
+    .accordion-guide .accordion-button img {
+        width: 100%;
+        height: 160px;
+        border-radius: 10px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    .accordion-button-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .accordion-button-text-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .accordion-custom-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../images/icons/guide__accordion-arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+    }
+    .accordion-guide .accordion-button:not(.collapsed) .accordion-custom-icon {
+        transform: rotate(180deg);
+    }
+    .accordion-guide .accordion-body {
+        font-family: var(--font-maru);
+        font-size: var(--font-size16);
+        color: var(--font-color);
+        padding: 20px;
+        background-color: var(--color-bg);
+        line-height: 1.8;
     }
 
+        #guide {
+            padding: 0 20px 60px 20px;
+        }
+        #guide .guide__header br {
+            display: block;
+        }
+        #guide .guide__header .guide__label {
+            font-size: var(--font-size14);
+        }
+        #guide .guide__header .guide__title {
+            font-size: var(--font-size36);
+        }
+        #guide .guide__content {
+            margin-top: 58px;
+        }
+        #guide .guide__sub-content-wrapper {
+            height: auto;
+            overflow-y: visible;
+        }
+        
     /* PROGRAM MOBILE */
 
     #program {
