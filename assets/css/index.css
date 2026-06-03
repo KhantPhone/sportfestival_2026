@@ -873,7 +873,9 @@ header .nav__link {
 #map {
     padding: 0 120px 120px 120px;
 }
-
+#map .map__content-img-sp{
+    display: none;
+}
 #map .map__header .map__label {
     font-family: var(--font-maru);
     color: var(--color-primary);
@@ -1367,26 +1369,15 @@ footer {
         display: none;
     }
     #guide .guide__sub-content {
-        border-top: 1px solid rgba(67, 44, 36, 0.20);
-        border-bottom: 1px solid rgba(67, 44, 36, 0.20);
-        background-color: var(--light--background);
+        background-color:red;
         cursor: pointer;
         position: relative;
+        border: 5px solid red;
     }
     #guide .guide__sub-content.active {
         background: var(--color-bg);
     }
-    #guide .guide__sub-content.active::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 6px;
-        height: 60%;
-        background-color: var(--color-primary);
-        border-radius: 0 4px 4px 0;
-    }
+   
     #guide .guide__sub-content img {
         object-fit: cover;
         width: 100%;
@@ -1406,7 +1397,7 @@ footer {
     }
     #guide .guide__sub-title {
         font-family: var(--font-maru);
-        font-size: var(--font-size20);
+        font-size: var(--font-size22);
         font-weight: 450;
         line-height: 25px;
         letter-spacing: 0.4px;
@@ -1421,7 +1412,7 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
-        padding: 16px;
+        padding: 30px 16px;
         background-color: var(--light--background);
         font-family: var(--font-maru);
         box-shadow: none;
@@ -1467,11 +1458,12 @@ footer {
     }
     .accordion-guide .accordion-body {
         font-family: var(--font-maru);
-        font-size: var(--font-size16);
+        font-size: var(--font-size18);
         color: var(--font-color);
-        padding: 20px;
+        padding: 0 20px 42px 20px;
         background-color: var(--color-bg);
         line-height: 1.8;
+        font-weight: 400;
     }
 
         #guide {
@@ -1553,6 +1545,12 @@ footer {
 
     #map {
         padding: 0 20px 80px 20px;
+    }
+    #map .map__content-img-pc {
+        display: none;
+    }
+    #map .map__content-img-sp {
+        display: block;
     }
     #map .map__header br{
         display: block;
