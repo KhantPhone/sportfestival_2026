@@ -903,7 +903,7 @@ header .nav__link {
 
 /*FUN*/
 #fun {
-    padding: 0 120px 120px 120px;
+    padding: 0 0 120px 0;
 }
 #fun .fun__inner {
     background: url(../images/icons/Stars.svg);
@@ -956,7 +956,6 @@ header .nav__link {
     font-family: var(--font-maru);
     font-weight: 600;
     text-decoration: none;
-
 }
 #fun .fun__image {
     position: absolute;
@@ -965,9 +964,118 @@ header .nav__link {
     height: 100%;
     z-index: 1;
 }
-#fun .fun__image img {
+#fun  img {
     height: 100%;
- 
+}
+.fun__results {
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+.fun__result-detail{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background: url(../images/icons/Stars.svg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fun__results.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.fun__results-inner {
+    max-width: 600px;
+    gap: 24px 0;
+}
+.fun__result-card {
+    background: url(../images/icons/Stars.svg);
+    background-color: var(--color-primary);
+    border-radius: 28px;
+    color: #ffffff;
+    font-family: var(--font-maru);
+    font-size: var(--font-size30);
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.fun__result-card:hover {
+    transform: scale(1.04);
+    opacity: 0.9;
+}
+.fun__results-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: none;
+    background: var(--light--background);
+    font-size: var(--font-size18);
+    z-index: 99;
+    cursor: pointer;
+    color: var(--font-color);
+    transition: background 0.2s ease;
+}
+.fun__results-close:hover {
+    background: #e0e0e0;
+}
+.fun__content-detail{
+    padding: 100px 60px;
+    position: relative;
+    background: url(../images/icons/Stars.svg);
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+.fun__detail-view {
+    display: none;
+    width: 100%;
+}
+.detail__content-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+}
+.detail__content-title{
+    font-size: var(--font-size40);
+    font-family: var(--font-maru);
+    font-weight: 600;
+    color: var(--color-bg);
+}
+.detail__content-body {
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: var(--font-maru);
+    font-weight: 400;
+    color: var(--color-bg);
+    position: relative;
+    z-index: 100;
 }
 
 /* SPOT */
@@ -1618,7 +1726,34 @@ footer {
     #fun .fun__image {
         opacity: 0.2;
     }
-
+    #fun .fun__result-card{
+        font-size: var(--font-size26);
+        font-weight: 650;
+    }
+    #fun .fun__results {
+        padding: 0 20px;
+    }
+    #fun .detail__content-img{
+        opacity: 0.2;
+    }
+    .fun__content-detail{
+        padding: 90px 20px;
+    }
+    .detail__content-title{
+        font-size: var(--font-size26);
+        font-family: var(--font-maru);
+        font-weight: 600;
+        color: var(--color-bg);
+    }
+    .detail__content-body {
+        margin-top: 30px;
+        font-size: var(--font-size20);
+        font-family: var(--font-maru);
+        font-weight: 400;
+        color: var(--color-bg);
+        position: relative;
+        z-index: 100;
+    }
     /* SPOT MOBILE*/
 
     #spot {
