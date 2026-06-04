@@ -234,3 +234,4 @@ document.querySelectorAll('.fun__result-card').forEach(card => {
         funDetailView.style.display = 'block';
     });
 });
+

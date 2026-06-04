@@ -116,7 +116,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 body {
@@ -875,7 +875,9 @@ header .nav__link {
 .program__card-btn-icon {
     margin-left: 20px;
 }
-
+ #program a{
+        text-decoration: none;
+    }
 /* MAP */
 #map {
     padding: 0 120px 120px 120px;
@@ -1660,7 +1662,7 @@ footer {
     .program__card-btn-icon {
         margin-left: 20px;
     }
-
+   
     /* MAP MOBILE */
 
     #map {
