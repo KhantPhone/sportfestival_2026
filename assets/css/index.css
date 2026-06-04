@@ -502,8 +502,9 @@ header .nav__link {
     font-family: var(--font-kaku);
     color: var(--font-color);
     font-size: var(--font-size18);
-    font-weight: 400;
+    font-weight: 00;
 }
+#event-info .event-info__notes-
 #event-info .event-info__image-wrap{
     margin-top: 30px;
 }

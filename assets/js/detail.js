@@ -1,11 +1,3 @@
-/*preloader*/
-
- $(window).on('load',function(){
- 		$(".loader").fadeOut(1000);
- 		$(".content").fadeIn(1000);
- })
-
-
 
 // compe
 (function () {
@@ -51,3 +43,12 @@ hamburger.addEventListener('click', () => {
     const open = navMenu.classList.toggle('is-open');
     hamburger.setAttribute('aria-expanded', open);
 });
+
+/*preloader*/
+
+ $(window).on('load',function(){
+ 		$(".loader").fadeOut(1000);
+ 		$(".content").fadeIn(1000);
+ })
+
+
