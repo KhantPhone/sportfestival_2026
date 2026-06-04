@@ -425,9 +425,7 @@ ol {
     color: var(--color-primary);
 }
 /* HEADER */
-header {
-    
-}
+
 header .nav__logo-sp {
     display: none;
 }
