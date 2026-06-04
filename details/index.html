@@ -9,27 +9,88 @@
     <meta property="og:url" content="https://event.jec.ac.jp/sportfestival-2026/">
     <meta property="og:type" content="website">
     <title>競技詳細 | 第29回 スポーツフェスティバル 2026 | 日本電子専門学校</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/details.css">
     <link rel="shortcut icon"  href="../assets/images/icons/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="../assets/js/detail.js" defer></script>
 </head>
 <body>
-    <header>
-    <div class="KV">
-        <img src="../assets/images/competitions/KV.png" alt="大玉運びの様子">
-        <h1 class="KV__logo">
-            <img src="../assets/images/competitions/logo.png" 
-            alt="学校法人電子学園日本電子専門学校 29th SPORTFESTIVAL 第29回スポーツフェスティバル">
-        </h1>
+     <header>
+        <nav class="nav__menu" id="navMenu" aria-label="メインナビゲーション">
+            <div class="nav__toggle">
+                <button class="nav__hamburger" id="navHamburger" aria-label="ナビゲーション" aria-controls="navMenu" aria-expanded="false">
+                    <div class="nav__hamburger-icon">
+                        <span class="nav__hamburger-bar nav__hamburger-bar--1"></span>
+                        <span class="nav__hamburger-bar nav__hamburger-bar--2"></span>
+                    </div>
+                </button>
+            </div>
+            <div class="nav__menu-inner">
+                <div class="nav__row row">
+                    <div class="nav__brand col-lg-5 col-md-12">
+
+                        <a href="../index.html" data-target="index.html" class="nav__brand-link">
+                            <img src="../assets/images/icons/nav-logo-pc.svg" alt="第29回スポーツフェスティバルロゴ" class="nav__logo-pc img-fluid">   
+                            <img src="../assets/images/icons/nav-logo-sp.svg" alt="第29回スポーツフェスティバルロゴ" class="nav__logo-sp img-fluid">   
+                        </a>
+                    </div>
+                    <div class="nav__menu-content col-lg-7 col-md-12">
+                        <div class="nav__groups row">
+                            <div class="nav__group col-lg-4 col-md-12">
+                                <h3 class="nav__group-title mb-0">About</h3>
+                                <ul class="nav__list">
+                                    <li class="nav__item"><a href="#" data-target="theme" class="nav__link">FOREVER MEMORIES</a></li>
+                                    <li class="nav__item"><a href="#" data-target="event-info" class="nav__link">開催情報</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav__group col-lg-4 col-md-12">
+                                <h3 class="nav__group-title mb-0">Event</h3>
+                                <ul class="nav__list">
+                                    <li class="nav__item"><a href="#" data-target="team-info" class="nav__link">色別集合情報</a></li>
+                                    <li class="nav__item"><a href="#" data-target="program"class="nav__link">プログラム</a></li>
+                                    <li class="nav__item"><a href="#" data-target="spot" class="nav__link">フォトスポット</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav__group col-lg-4 col-md-12">
+                                <h3 class="nav__group-title mb-0">Guide</h3>
+                                <ul class="nav__list">
+                                    <li class="nav__item"><a href="#" data-target="map"  class="nav__link">会場マップ</a></li>
+                                    <li class="nav__item"><a href="#" data-target="fun"  class="nav__link">楽しみ方</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
         
-    <section class="KV__catch">
-        <h2>競技種目プログラム</h2>
-        <p>
-            通常12種目+アトラクション2種目+エキシビジョン種目2種目。<br>
-            1日のスケジュールに沿ってご紹介します。
-        </p>
-    </section>
-    </div>
+        <!-- MAIN VISUAL START -->
+        <div class="mv-container">
+            <div class="mv">
+                <a href="../index.html" data-target="index.html">
+                    <div class="mv-logo">
+                        <img src="../assets/images/icons/nav-logo-pc.svg" alt="第29回スポーツフェスティバルロゴ">
+                    </div>
+                    <div class="mv-logo-sp">
+                        <img src="../assets/images/icons/nav-logo-sp.svg" alt="第29回スポーツフェスティバルロゴ">
+                    </div>
+                </a>
+                <div class="mv-bottom-text">
+                    <div class="mv-theme-container">
+                        
+                    </div>
+                    <h2>競技種目プログラム</h2>
+                    <p>メイン12種目+アトラクション2種目+エキシビション2種目。<br>
+                    1日のスケジュールに沿ってご紹介します。</p>
+                </div>
+                
+            </div>
+        </div>
+        <!-- MAIN VISUAL END -->
+
+        
+        
     </header>
     <main>
     <div class="wrap">
@@ -51,7 +112,7 @@
         <ol>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_01_relay.png" alt="選手が両手を挙げてゴールテープを切る瞬間" >
+                    <img src="../assets/images/competitions/comp_01_relay.png" alt="選手が両手を挙げてゴールテープを切る瞬間"  class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -64,7 +125,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_02_ninin.png" alt="女子学生たちが肩を組んで走っている様子">
+                    <img src="../assets/images/competitions/comp_02_ninin.png" alt="女子学生たちが肩を組んで走っている様子" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -80,7 +141,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_03_tamaire.png" alt="玉入れの様子">
+                    <img src="../assets/images/competitions/comp_03_tamaire.png" alt="玉入れの様子" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -96,7 +157,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_04_oni.png" alt="大勢の学生が走る様子">
+                    <img src="../assets/images/competitions/comp_04_oni.png" alt="大勢の学生が走る様子" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -112,7 +173,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_05_relay.png" alt="男子学生が笑顔で走る様子">
+                    <img src="../assets/images/competitions/comp_05_relay.png" alt="男子学生が笑顔で走る様子" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -126,7 +187,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_06_daruma.png" alt="6段以上積みあがっただるまを4人で運ぶ様子">
+                    <img src="../assets/images/competitions/comp_06_daruma.png" alt="6段以上積みあがっただるまを4人で運ぶ様子" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -142,7 +203,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_quiz.png" alt="種目名が映ったオーロラモニターとそれを前にする参加学生たち">
+                    <img src="../assets/images/competitions/comp_quiz.png" alt="種目名が映ったオーロラモニターとそれを前にする参加学生たち" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -156,7 +217,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_07_kyouin.png" alt="玉入れの様子">
+                    <img src="../assets/images/competitions/comp_07_kyouin.png" alt="玉入れの様子" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -171,7 +232,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_08_odama.png" alt="赤の大玉を空中に跳ね上げる学生たち">
+                    <img src="../assets/images/competitions/comp_08_odama.png" alt="赤の大玉を空中に跳ね上げる学生たち" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -187,7 +248,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_09_kiba.png" alt="騎手同士がスティックを振りかぶっている">
+                    <img src="../assets/images/competitions/comp_09_kiba.png" alt="騎手同士がスティックを振りかぶっている" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -205,7 +266,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_10_esports.png" alt="モニターに映る選手たち">
+                    <img src="../assets/images/competitions/comp_10_esports.png" alt="モニターに映る選手たち" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -220,7 +281,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_11_relay.png" alt="全力で走る選手たち">
+                    <img src="../assets/images/competitions/comp_11_relay.png" alt="全力で走る選手たち" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -234,7 +295,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/comp_12_cRelay.png" alt="スタートラインに並ぶ選手たち">
+                    <img src="../assets/images/competitions/comp_12_cRelay.png" alt="スタートラインに並ぶ選手たち" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -257,7 +318,7 @@
         <ol>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/att_base.png" alt="" width="556" height="303">
+                    <img src="../assets/images/competitions/att_base.png" alt="" width="556" height="303" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -271,7 +332,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/att_speed.png" alt="" width="556" height="303">
+                    <img src="../assets/images/competitions/att_speed.png" alt="" width="556" height="303" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -295,7 +356,7 @@
         <ol>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/exh_dancho.png" alt="" width="556" height="303">
+                    <img src="../assets/images/competitions/exh_dancho.png" alt="" width="556" height="303" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -310,7 +371,7 @@
             </li>
             <li class="item">
                 <div class="item__img">
-                    <img src="../assets/images/competitions/exh_nazotoki.png" alt="" width="556" height="303">
+                    <img src="../assets/images/competitions/exh_nazotoki.png" alt="" width="556" height="303" class="img-fluid">
                 </div>
                 <div class="item__text">
                     <div class="item__text--inner">
@@ -327,6 +388,53 @@
     </article>
     </div>
     </main>
-
+    <footer>
+        <div class="footer__inner">
+            <div class="footer__row row">
+                <div class="footer__brand col-lg-4 col-md-12">
+                    <div class="footer__logos">
+                        <a href="#" data-target="index.html">
+                            <img src="../assets/images/icons/logo-sf.svg" alt="第29回スポーツフェスティバルロゴ">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__group col-lg-2 col-md-6 col-sm-6">
+                    <h3 class="footer__nav-label">About</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item mb-0"><a href="#" data-target="theme" class="footer__nav-link">FOREVER MEMORIES</a></li>
+                        <li class="footer__nav-item mb-0"><a href="#" data-target="event-info" class="footer__nav-link">開催情報</a></li>
+                    </ul>
+                </div>
+                <div class="footer__group col-lg-2 col-md-6 col-sm-6">
+                    <h3 class="footer__nav-label">Event</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#" data-target="team-info" class="footer__nav-link">色別集合情報</a></li>
+                        <li class="footer__nav-item"><a href="#" data-target="program" class="footer__nav-link">プログラム</a></li>
+                        <li class="footer__nav-item"><a href="#" data-target="spot" class="footer__nav-link">フォトスポット</a></li>
+                    </ul>
+                </div>
+                <div class="footer__group col-lg-2 col-md-6 col-sm-6">
+                    <h3 class="footer__nav-label">Guide</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#" data-target="map" class="footer__nav-link">会場マップ</a></li>
+                        <li class="footer__nav-item"><a href="#" data-target="fun" class="footer__nav-link">楽しみ方</a></li>
+                    </ul>
+                </div>
+                <div class="footer__group col-lg-2 col-md-6 col-sm-6">
+                    <h3 class="footer__nav-label font-maru">Follow</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="https://x.com/nichiden1951"  class="footer__nav-link font-maru">X</a></li>
+                        <li class="footer__nav-item"><a href="https://www.instagram.com/nichiden1951/" class="footer__nav-link font-maru">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-inner">
+                <p class="footer__copy">©2026 Japan Electronics College</p>
+                <a href="https://www.jec.ac.jp/course/mobile/aw/" class="footer__copy">Webデザイン科</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
