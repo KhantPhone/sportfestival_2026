@@ -1,3 +1,13 @@
+/*preloader*/
+
+ $(window).on('load',function(){
+ 		$(".loader").fadeOut(1000);
+ 		$(".content").fadeIn(1000);
+ })
+
+
+
+
 // NAV LINKS
 document.querySelectorAll('[data-target]').forEach(link=>{
     link.addEventListener('click', e => {
