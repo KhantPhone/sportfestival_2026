@@ -33,6 +33,7 @@
 })();
 
 
+
 //HEADER
 const navMenu = document.getElementById('navMenu');
 const hamburger = document.getElementById('navHamburger');
