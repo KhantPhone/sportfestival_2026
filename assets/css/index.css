@@ -746,6 +746,7 @@ header .nav__link {
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 50px;
     overflow: hidden;
+    background-color: var(--light--background);
 }
 
 .team-info__table td {
@@ -924,6 +925,56 @@ header .nav__link {
 }
 #map .map__content {
     margin-top: 100px;
+}
+.map__trigger {
+    cursor: pointer;
+}
+
+.map-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.map-modal.is-open {
+    display: flex;
+}
+
+.map-modal__img , .map-modal__img__pc {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+.map-modal__img__sp{
+    display: none;
+}
+.map-modal__close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: none;
+    background: var(--light--background);
+    font-size: var(--font-size18);
+    z-index: 99;
+    cursor: pointer;
+    color: var(--font-color);
+    transition: background 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2)  ;
+}
+.map-modal__close:hover {
+    background: #e0e0e0;
 }
 
 /*FUN*/
@@ -1705,6 +1756,15 @@ footer {
     }
     #map .map__header .map__title {
         font-size: var(--font-size36);
+    }
+    .map-modal__img , .map-modal__img__sp {
+        max-width: 1000%;
+        max-height: 90vh;
+        object-fit: contain;
+        display: block;
+    }
+    .map-modal__img__pc{
+        display: none;
     }
 
     /* FUN MOBILE */

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="shortcut icon"  href="assets/images/icons/favicon.svg">
+    <link rel="shortcut icon"  href="assets/images/icons/Favi.svg">
     <script src="./assets/js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -751,13 +751,20 @@
                     <h1 class="map__title">会場マップ</h1>
                 </div>
                 <div class="map__content">
-                    <a href="./details/">
+                    <div class="map__trigger">
                         <img src="assets/images/map/map-pc.svg" alt="当日の会場マップ" class="map__content-img-pc img-fluid">
                         <img src="assets/images/map/map-sp.svg" alt="当日の会場マップ" class="map__content-img-sp img-fluid">
-                    </a>
+                    </div>
                 </div>
             </div>
+            <div class="map-modal" id="mapModal">
+                <span class="map-modal__close" id="mapModalClose">✕</span>
+                <img src="assets/images/map/map-pc.svg" alt="当日の会場マップ" class="map-modal__img__pc">
+                <img src="assets/images/map/map-sp.svg" alt="当日の会場マップ" class="map-modal__img__sp">
+            </div>
         </section>
+
+        
         <!-- MAP SECTION END -->
     
         <!-- PHOTOSPOT SECTION START -->

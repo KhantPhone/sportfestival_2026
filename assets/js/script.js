@@ -245,3 +245,31 @@ document.querySelectorAll('.fun__result-card').forEach(card => {
     });
 });
 
+//MAP
+
+
+  const mapTrigger = document.querySelector('.map__trigger');
+  const mapModal = document.getElementById('mapModal');
+  const mapModalClose = document.getElementById('mapModalClose');
+
+  mapTrigger.addEventListener('click', () => {
+    mapModal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  });
+
+  function closeModal() {
+    mapModal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  mapModalClose.addEventListener('click', closeModal);
+
+  mapModal.addEventListener('click', (e) => {
+    if (e.target === mapModal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+
