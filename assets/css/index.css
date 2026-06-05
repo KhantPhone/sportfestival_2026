@@ -946,7 +946,7 @@ header .nav__link {
 }
 
 .map-modal__img , .map-modal__img__pc {
-    max-width: 90%;
+    max-width: 85%;
     max-height: 90vh;
     object-fit: contain;
 }
@@ -963,7 +963,7 @@ header .nav__link {
     border-radius: 50%;
     border: none;
     background: var(--light--background);
-    font-size: var(--font-size18);
+    font-size: var(--font-size20);
     z-index: 99;
     cursor: pointer;
     color: var(--font-color);
@@ -1758,7 +1758,7 @@ footer {
         font-size: var(--font-size36);
     }
     .map-modal__img , .map-modal__img__sp {
-        max-width: 1000%;
+        max-width: 100%;
         max-height: 90vh;
         object-fit: contain;
         display: block;
