@@ -1206,6 +1206,7 @@ header .nav__link {
     font-weight: 400;
     cursor: pointer;
     margin-top: 30px;
+   
 }
 
 /* FOOTER */
@@ -1696,7 +1697,7 @@ footer {
     #program .swiper-slide {
     display: flex;
     justify-content: center;
-    }   
+}   
     #program .program__header .program__label {
         font-size: var(--font-size14);
     }
@@ -1749,6 +1750,8 @@ footer {
         display: block;
     }
     #map .map__content  {
+        display: flex;
+        justify-content: center;
         margin-top: 56px;
     }
     #map .map__header .map__label {
@@ -1882,6 +1885,7 @@ footer {
     #spot .spot__right{
        margin-top: 30px;
     }
+    
     /* TEAM INFO MOBILE */
      #team-info{
         padding: 0 20px 80px 20px;
