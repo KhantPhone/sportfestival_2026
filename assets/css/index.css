@@ -1119,6 +1119,7 @@ header .nav__link {
     background: #e0e0e0;
 }
 .fun__content-detail{
+    margin-top: 50px;
     padding: 100px 60px;
     position: relative;
     background: url(../images/icons/Stars.svg);
@@ -1825,6 +1826,7 @@ footer {
         opacity: 0.2;
     }
     .fun__content-detail{
+        margin-top: 0px;
         padding: 90px 20px;
     }
     .detail__content-title{
