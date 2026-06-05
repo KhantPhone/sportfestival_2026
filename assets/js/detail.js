@@ -52,3 +52,23 @@ hamburger.addEventListener('click', () => {
  })
 
 
+//sticky
+$(function () {
+  const $bar = $('.switch__sticky');
+  const $wrap = $('.attractions-wrapper');
+  const $footer = $('footer');
+
+  function toggleBar() {
+    const wrap = $wrap[0].getBoundingClientRect();
+    const footer = $footer[0].getBoundingClientRect();
+    const vh = window.innerHeight;
+
+    const wrapInView = wrap.top < vh && wrap.bottom > 0;
+    const footerVisible = footer.top < vh;  
+
+    $bar.toggleClass('is-visible', wrapInView && !footerVisible);
+  }
+
+  $(window).on('scroll resize', toggleBar);
+  toggleBar();
+});
