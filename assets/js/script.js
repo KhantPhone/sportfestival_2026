@@ -34,8 +34,8 @@ document.querySelectorAll('.marquee__track').forEach(track => {
 
 //SWIPER
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,        
-  centeredSlides: true,
+  slidesPerView: 1,
+  centeredSlides: false,
   spaceBetween: 20,
   grabCursor: true,
   loop: true,
@@ -48,16 +48,12 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
     dynamicBullets: true,
   },
-
   breakpoints: {
-    768: {              
-      slidesPerView: 2,
-    },
-    1024: {             
+    1024: {
       slidesPerView: 2,
     }
   }
-});
+}); 
 
 //GUIDE
 const guideItems = [

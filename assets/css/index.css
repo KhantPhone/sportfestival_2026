@@ -1691,12 +1691,12 @@ footer {
         padding-left: 10px;
     }
     #program .swiper-container {
-    margin-top: 85px;
+        margin-top: 85px;
     }
-    #program .swiper-slide{
-        display: flex;
-        justify-content: center;
-    }
+    #program .swiper-slide {
+    display: flex;
+    justify-content: center;
+    }   
     #program .program__header .program__label {
         font-size: var(--font-size14);
     }
