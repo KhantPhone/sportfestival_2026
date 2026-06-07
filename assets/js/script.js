@@ -6,18 +6,21 @@
  })
 
 
-
-
 // NAV LINKS
-document.querySelectorAll('[data-target]').forEach(link=>{
+document.querySelectorAll('[data-target]').forEach(link => {
     link.addEventListener('click', e => {
         e.preventDefault();
         const target = document.getElementById(link.dataset.target);
-        target.scrollIntoView({behavior:'smooth'});
+        if (!target) return;
+        target.scrollIntoView({ behavior: 'smooth' });
         navMenu.classList.remove('is-open');
         hamburger.setAttribute('aria-expanded', false);
-    })
-})
+        document.documentElement.classList.remove('menu-open');
+        document.body.classList.remove('menu-open');
+    });
+});
+
+
 //HEADER
 const navMenu = document.getElementById('navMenu');
 const hamburger = document.getElementById('navHamburger');
