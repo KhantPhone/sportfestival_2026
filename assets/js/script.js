@@ -25,6 +25,8 @@ const hamburger = document.getElementById('navHamburger');
 hamburger.addEventListener('click', () => {
     const open = navMenu.classList.toggle('is-open');
     hamburger.setAttribute('aria-expanded', open);
+    document.body.classList.toggle('menu-open', open);
+    document.documentElement.classList.toggle('menu-open', open);
 });
 // MARQUEE
 document.querySelectorAll('.marquee__track').forEach(track => {
