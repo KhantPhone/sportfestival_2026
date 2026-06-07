@@ -447,14 +447,24 @@ ol {
 }
 /* HEADER */
 
+header {
+    background: url(../images/icons/Mathematics.svg);
+}
 header .nav__logo-sp {
     display: none;
 }
+html.menu-open,
+body.menu-open {
+    overflow: hidden;
+}
 header .nav__menu-inner {
     width: 100%;
+    height: 100vh;
     padding: 120px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F5F5F5;
-    border-radius: 0px 0px 50px 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -464,6 +474,12 @@ header .nav__menu-inner {
     pointer-events: none;
     z-index: 99;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+header .nav__menu-inner::-webkit-scrollbar {
+    display: none;
 }
 header .nav__menu.is-open .nav__menu-inner {
     transform: translateY(0);
@@ -525,6 +541,7 @@ header .nav__list {
     font-family: var(--font-maru);
     margin-top: 20px;
 }
+
 header .nav__link {
     display: inline-block;
     font-size: var(--font-size16);
@@ -1504,7 +1521,7 @@ footer {
 
 @media screen and (max-width: 998px) {
 
-    /* HEADER MOBILE */
+     /* HEADER MOBILE */
     header .nav__logo-pc{
         display: none;
     }
@@ -1513,9 +1530,9 @@ footer {
     }
     header .nav__menu-inner {
         width: 100%;
-        padding:70px 20px;
+        padding:50px 20px;
         background-color: #F5F5F5;
-        border-radius: 0px 0px 30px 30px;
+        display: block;
     }
     
     header .nav__toggle button {
@@ -1545,16 +1562,16 @@ footer {
         padding-left: 0px;
     }
     header .nav__group-title {
-        margin-top: 50px;   
+        margin-top: 40px;   
     }
     header .nav__list {
         margin-top: 0px;  
     }
     header .nav__item:first-child .nav__link {
-    margin-top: 24px;
+    margin-top: 18px;
     }
     header .nav__link {
-        margin-top: 16px;
+        margin-top: 14px;
     }
     header .nav__groups{
         padding: 0 40px;

@@ -1,4 +1,17 @@
 
+
+console.log('script.js loaded, hash is:', window.location.hash);
+
+window.addEventListener('load', () => {
+    const id = window.location.hash.slice(1);
+    if (!id) return;
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, '', window.location.pathname);
+    console.log('hash stripped, url now:', window.location.href);
+});
+
 // compe
 (function () {
   'use strict';
@@ -34,6 +47,18 @@
 })();
 
 
+// NAV LINKS
+window.addEventListener('load', () => {
+    const id = window.location.hash.slice(1);
+    if (!id) return;
+    const el = document.getElementById(id);
+    if (!el) return;
+    requestAnimationFrame(() => {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', window.location.pathname); // removes #spot
+    });
+});
+
 
 //HEADER
 const navMenu = document.getElementById('navMenu');
@@ -42,6 +67,8 @@ const hamburger = document.getElementById('navHamburger');
 hamburger.addEventListener('click', () => {
     const open = navMenu.classList.toggle('is-open');
     hamburger.setAttribute('aria-expanded', open);
+    document.body.classList.toggle('menu-open', open);
+    document.documentElement.classList.toggle('menu-open', open);
 });
 
 /*preloader*/

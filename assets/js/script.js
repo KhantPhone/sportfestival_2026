@@ -1,5 +1,6 @@
 /*preloader*/
 
+
  $(window).on('load',function(){
  		$(".loader").fadeOut(1000);
  		$(".content").fadeIn(1000);
@@ -20,7 +21,14 @@ document.querySelectorAll('[data-target]').forEach(link => {
     });
 });
 
-
+window.addEventListener('load', () => {
+    const id = window.location.hash.slice(1);
+    if (!id) return;
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, '', window.location.pathname);
+});
 //HEADER
 const navMenu = document.getElementById('navMenu');
 const hamburger = document.getElementById('navHamburger');
