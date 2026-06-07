@@ -1,17 +1,5 @@
 
 
-console.log('script.js loaded, hash is:', window.location.hash);
-
-window.addEventListener('load', () => {
-    const id = window.location.hash.slice(1);
-    if (!id) return;
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    history.replaceState(null, '', window.location.pathname);
-    console.log('hash stripped, url now:', window.location.href);
-});
-
 // compe
 (function () {
   'use strict';
@@ -82,18 +70,9 @@ hamburger.addEventListener('click', () => {
 //sticky
 $(function () {
   const $bar = $('.switch__sticky');
-  const $wrap = $('.attractions-wrapper');
-  const $footer = $('footer');
 
   function toggleBar() {
-    const wrap = $wrap[0].getBoundingClientRect();
-    const footer = $footer[0].getBoundingClientRect();
-    const vh = window.innerHeight;
-
-    const wrapInView = wrap.top < vh && wrap.bottom > 0;
-    const footerVisible = footer.top < vh;  
-
-    $bar.toggleClass('is-visible', wrapInView && !footerVisible);
+    $bar.toggleClass('is-visible', window.scrollY > window.innerHeight);
   }
 
   $(window).on('scroll resize', toggleBar);

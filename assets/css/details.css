@@ -201,7 +201,7 @@ body {
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
-    transition: opacity 0.5s;
+    transition: opacity 1s;
 }
 .switch__sticky.is-visible {
     opacity: 1;
@@ -237,6 +237,10 @@ body {
     border: 1px solid #fff;
     color: #FFFFFF;
     border-radius: 30px; 
+}
+.img-fluid{
+    width: 571px;
+    height: auto;
 }
 .contents {
     display: none;
@@ -446,6 +450,7 @@ ol {
 
 header {
     background: url(../images/icons/Mathematics.svg);
+    position: relative;
     z-index: 99;
 }
 header .nav__logo-sp {
@@ -1457,6 +1462,8 @@ header .nav__link {
 /* FOOTER */
 
 footer {
+    z-index: 999;
+    position: relative;
     background-color: var(--color-primary);
     padding:80px 60px 0 60px;
 }
