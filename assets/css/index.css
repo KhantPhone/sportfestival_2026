@@ -1307,9 +1307,9 @@ footer {
     }
     header .nav__menu-inner {
         width: 100%;
-        padding:40px 20px 0 20px;
+        padding:3git 0px 20px;
         background-color: #F5F5F5;
-       
+        display: block;
     }
     
     header .nav__toggle button {
