@@ -186,7 +186,7 @@ header .nav__menu-inner {
     pointer-events: none;
     z-index: 99;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
+    overflow: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -1307,9 +1307,9 @@ footer {
     }
     header .nav__menu-inner {
         width: 100%;
-        padding:70px 20px;
+        padding:40px 20px 0 20px;
         background-color: #F5F5F5;
-        
+       
     }
     
     header .nav__toggle button {
@@ -1339,16 +1339,16 @@ footer {
         padding-left: 0px;
     }
     header .nav__group-title {
-        margin-top: 50px;   
+        margin-top: 40px;   
     }
     header .nav__list {
         margin-top: 0px;  
     }
     header .nav__item:first-child .nav__link {
-    margin-top: 24px;
+    margin-top: 18px;
     }
     header .nav__link {
-        margin-top: 16px;
+        margin-top: 14px;
     }
     header .nav__groups{
         padding: 0 40px;
