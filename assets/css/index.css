@@ -135,6 +135,7 @@ body {
 }
 
 /* LOADER */
+
 .content{
 	display: none;
 }
@@ -150,9 +151,10 @@ body {
   justify-content: center;
 }
 .loader__gif {
-  width: 160px;   /* adjust to taste */
+  width: 160px;   
   height: auto;
 }
+
 /* HEADER */
 header {
     background: url(../images/icons/Mathematics.svg);
@@ -511,7 +513,10 @@ header .nav__link {
     font-family: var(--font-kaku);
     color: var(--font-color);
     font-size: var(--font-size18);
-    font-weight: 00;
+}
+#event-info .event-info__note-sub-text{
+    font-weight: 500;
+    color: var(--font-color);
 }
 #event-info .event-info__notes-
 #event-info .event-info__image-wrap{
@@ -985,7 +990,7 @@ header .nav__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.4);
 }
 .map-modal__close:hover {
     background: #e0e0e0;
@@ -1046,6 +1051,9 @@ header .nav__link {
     font-family: var(--font-maru);
     font-weight: 600;
     text-decoration: none;
+}
+#fun .fun-btn-icon{
+    margin-left: 20px;
 }
 #fun .fun__image {
     position: absolute;
@@ -1131,7 +1139,7 @@ header .nav__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.4);
 }
 .fun__results-close:hover {
     background: #e0e0e0;

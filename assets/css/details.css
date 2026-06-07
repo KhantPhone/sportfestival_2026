@@ -197,7 +197,7 @@ body {
     right: 0;
     display: flex;
     justify-content: center;
-    z-index: 100;
+    z-index: 3;
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
@@ -217,7 +217,7 @@ body {
     color: var(--color-primary);
     background-color: #fff;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
-    
+    z-index: 3;
     border-radius: 30px;
 }
 .switch li {
@@ -422,33 +422,31 @@ ol {
 }
 
 /* LOADER */
+
 .content{
 	display: none;
 }
 .loader {
   height: 100vh;
   width: 100vw;
-  position: fixed;   
+  position: fixed;
   inset: 0;
-  background: #FBFBFB;
+  background: #ffffff;
   z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.loader>div{	
-	position: fixed;
-	margin: auto;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	
+.loader__gif {
+  width: 160px;   
+  height: auto;
 }
-.spinner-border {
-    color: var(--color-primary);
-}
+
 /* HEADER */
 
 header {
     background: url(../images/icons/Mathematics.svg);
+    z-index: 99;
 }
 header .nav__logo-sp {
     display: none;
@@ -592,14 +590,14 @@ header .nav__link {
     z-index: 1;
 }
 .mv-bottom-text h2 {
-    font-family: var(--font-fra);
+   
     color: var(--color-primary);
     font-size: var(--font-size48);
     font-weight: 600;
 }
 .mv-bottom-text p {
     font-size: var(--font-size16);
-    font-family: var(--font-kaku);
+   
     font-weight: 450;
     line-height: 1.8;
     color: var(--font-color);
