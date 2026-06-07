@@ -141,22 +141,17 @@ body {
 .loader {
   height: 100vh;
   width: 100vw;
-  position: fixed;   
+  position: fixed;
   inset: 0;
   background: #FBFBFB;
   z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.loader>div{	
-	position: fixed;
-	margin: auto;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	
-}
-.spinner-border {
-    color: var(--color-primary);
+.loader__gif {
+  width: 160px;   /* adjust to taste */
+  height: auto;
 }
 /* HEADER */
 header {
@@ -1185,7 +1180,7 @@ header .nav__link {
     overflow: hidden;
 }
 #spot .spot__left {
-    padding-left: 80px;
+    padding:60px 0 0 80px;
 }
 #spot .spot__header .spot__label {
     padding-top: 40px;
@@ -1876,7 +1871,7 @@ footer {
         padding: 36px 0 0 20px;
     }
     #spot .spot__left {
-        padding-left: 0px;
+        padding: 0px;
     }
     #spot .header-block{
         display: block;
