@@ -1229,18 +1229,14 @@ header .nav__link {
 #spot .spot__header .spot__title {
     font-family: var(--font-maru);
     color: var(--font-color);
-    font-size: var(--font-size42);
+    font-size: var(--font-size38);
     font-weight: 700;
 }
 #spot .spot__header .spot__title .spot__question {
     color: var(--color-primary);
-    transform: rotate(11.356deg);
-    font-size: var(--font-size60);
+    font-size: var(--font-size44);
     display: inline-block;
     font-weight: 700;
-    position: relative;
-    top: -7px;
-    
 } 
 #spot .spot__content{
     margin-top: 40px;
@@ -1923,13 +1919,9 @@ footer {
     }
     #spot .spot__header .spot__title .spot__question {
         color: var(--color-primary);
-        transform: rotate(11.356deg);
-        font-size: var(--font-size50);
+        font-size: var(--font-size40);
         display: inline-block;
         font-weight: 700;
-        position: relative;
-        top: -7px;
-        
     } 
     #spot .spot__content{
         text-align: center;

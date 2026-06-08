@@ -173,6 +173,7 @@ ol {
 .item__text {
     display: flex;
     flex: 1;
+    
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -287,6 +288,9 @@ header {
 }
 header .nav__logo-sp {
     display: none;
+}
+header .nav__logo-pc{
+    display: block;
 }
 html.menu-open,
 body.menu-open {
