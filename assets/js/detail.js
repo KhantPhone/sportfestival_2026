@@ -68,13 +68,27 @@ hamburger.addEventListener('click', () => {
 
 
 //sticky
-$(function () {
-  const $bar = $('.switch__sticky');
+document.addEventListener('DOMContentLoaded', function () {
+  const bar = document.querySelector('.switch__sticky');
+  const footer = document.querySelector('footer');
+  const wrap = document.querySelector('.wrap');
 
   function toggleBar() {
-    $bar.toggleClass('is-visible', window.scrollY > window.innerHeight);
+    const scrolledPastHero = window.scrollY > window.innerHeight;
+    const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+    const reachedFooter = window.scrollY + window.innerHeight >= footerTop;
+
+    bar.classList.toggle('is-visible', scrolledPastHero && !reachedFooter);
   }
 
-  $(window).on('scroll resize', toggleBar);
+  window.addEventListener('scroll', toggleBar);
+  window.addEventListener('resize', toggleBar);
   toggleBar();
+
+  bar.querySelectorAll('.switch li').forEach(function (li) {
+    li.addEventListener('click', function () {
+      const wrapTop = wrap.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: wrapTop, behavior: 'smooth' });
+    });
+  });
 });
