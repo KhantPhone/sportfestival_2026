@@ -453,15 +453,12 @@ header .nav__link {
     padding:0px 70px;
     color:var(--font-color);
     margin-top: 60px;
-    line-height: 2;
+    line-height: 55px;
     font-size: var(--font-size24);
     letter-spacing: 0.48px;
     font-family: var(--font-maru);
     font-weight: 400;
-    text-align: center;   
-    word-break: normal;
-    overflow-wrap: anywhere;
-    line-break: strict;
+    text-align: center;  
 }
 #theme .theme__body strong {
     font-weight: bold;

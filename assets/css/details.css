@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Zen+Dots&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 
 :root {
-    
     --color-primary: #00BE8A;
     --color-secondary: #FFEC5F;
     --light--background: #F3F3F3;
@@ -13,9 +12,106 @@
     --font-fra: 'Fraunces', serif;
     --font-jak: 'Plus Jakarta Sans', sans-serif;
     --font-kaku: 'Zen Kaku Gothic New', sans-serif;
+    --font-size1: 1px;
+    --font-size2: 2px;
+    --font-size3: 3px;
+    --font-size4: 4px;
+    --font-size5: 5px;
+    --font-size6: 6px;
+    --font-size7: 7px;
+    --font-size8: 8px;
+    --font-size9: 9px;
+    --font-size10: 10px;
+    --font-size11: 11px;
+    --font-size12: 12px;
+    --font-size13: max(1.3rem, 12px);
+    --font-size14: max(1.4rem, 12px);
+    --font-size15: max(1.5rem, 13px);
     --font-size16: max(1.6rem, 14px);
+    --font-size17: max(1.7rem, 15px);
     --font-size18: max(1.8rem, 16px);
+    --font-size19: max(1.9rem, 17px);
+    --font-size20: max(2.0rem, 18px);
+    --font-size21: max(2.1rem, 18px);
+    --font-size22: max(2.2rem, 18px);
+    --font-size23: max(2.3rem, 20px);
+    --font-size24: max(2.4rem, 20px);
+    --font-size25: max(2.5rem, 21px);
+    --font-size26: max(2.6rem, 22px);
+    --font-size27: max(2.7rem, 22px);
+    --font-size28: max(2.8rem, 24px);
+    --font-size29: max(2.9rem, 25px);
+    --font-size30: max(3.0rem, 26px);
+    --font-size31: max(3.1rem, 26px);
+    --font-size32: max(3.2rem, 27px);
+    --font-size33: max(3.3rem, 28px);
+    --font-size34: max(3.4rem, 29px);
+    --font-size35: max(3.5rem, 30px);
+    --font-size36: max(3.6rem, 30px);
+    --font-size37: max(3.7rem, 31px);
+    --font-size38: max(3.8rem, 32px);
+    --font-size39: max(3.9rem, 32px);
+    --font-size40: 4.0rem;
+    --font-size41: 4.1rem;
+    --font-size42: 4.2rem;
+    --font-size43: 4.3rem;
+    --font-size44: 4.4rem;
+    --font-size45: 4.5rem;
+    --font-size46: 4.6rem;
+    --font-size47: 4.7rem;
     --font-size48: 4.8rem;
+    --font-size49: 4.9rem;
+    --font-size50: 5.0rem;
+    --font-size51: 5.1rem;
+    --font-size52: 5.2rem;
+    --font-size53: 5.3rem;
+    --font-size54: 5.4rem;
+    --font-size55: 5.5rem;
+    --font-size56: 5.6rem;
+    --font-size57: 5.7rem;
+    --font-size58: 5.8rem;
+    --font-size59: 5.9rem;
+    --font-size60: 6.0rem;
+    --font-size61: 6.1rem;
+    --font-size62: 6.2rem;
+    --font-size63: 6.3rem;
+    --font-size64: 6.4rem;
+    --font-size65: 6.5rem;
+    --font-size66: 6.6rem;
+    --font-size67: 6.7rem;
+    --font-size68: 6.8rem;
+    --font-size69: 6.9rem;
+    --font-size70: 7.0rem;
+    --font-size71: 7.1rem;
+    --font-size72: 7.2rem;
+    --font-size73: 7.3rem;
+    --font-size74: 7.4rem;
+    --font-size75: 7.5rem;
+    --font-size76: 7.6rem;
+    --font-size77: 7.7rem;
+    --font-size78: 7.8rem;
+    --font-size79: 7.9rem;
+    --font-size80: 8.0rem;
+    --font-size81: 8.1rem;
+    --font-size82: 8.2rem;
+    --font-size83: 8.3rem;
+    --font-size84: 8.4rem;
+    --font-size85: 8.5rem;
+    --font-size86: 8.6rem;
+    --font-size87: 8.7rem;
+    --font-size88: 8.8rem;
+    --font-size89: 8.9rem;
+    --font-size90: 9.0rem;
+    --font-size91: 9.1rem;
+    --font-size92: 9.2rem;
+    --font-size93: 9.3rem;
+    --font-size94: 9.4rem;
+    --font-size95: 9.5rem;
+    --font-size96: 9.6rem;
+    --font-size97: 9.7rem;
+    --font-size98: 9.8rem;
+    --font-size99: 9.9rem;
+    --font-size100: 10.0rem;
 }
 
 html {
@@ -435,7 +531,7 @@ header .nav__link {
 }
 .mv-bottom-text h2 {
     color: var(--color-primary);
-    font-size: var(--font-size48);
+    font-size: var(--font-size30);
     font-weight: 600;
 }
 .mv-bottom-text p {
@@ -590,7 +686,7 @@ footer {
         max-width: 900px;
     }
     .mv-bottom-text h2 {
-        font-size: var(--font-size30);
+        font-size: var(--font-size40);
         font-weight: 600;
     }
     .mv-bottom-text p {
