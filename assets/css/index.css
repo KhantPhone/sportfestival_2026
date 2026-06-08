@@ -1901,10 +1901,10 @@ footer {
     /* SPOT MOBILE*/
 
     #spot {
-        padding: 36px 0 0 20px;
+        padding: 36px 0 0 0;
     }
     #spot .spot__left {
-        padding: 0px;
+        padding: 20px;
     }
     #spot .header-block{
         display: block;

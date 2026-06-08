@@ -559,13 +559,13 @@ footer {
     }
     .mv-container {
         height: 70vh;
-        padding-bottom: 40;
+        padding-bottom: 400px;
     }
     .mv-bottom-text br {
         display: none;
     }
     .mv {
-        height: 70vh;
+        height: 45vh;
     }
     .mv-logo {
         display: none;
