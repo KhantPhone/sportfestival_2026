@@ -6,6 +6,7 @@
     --light--background: #F3F3F3;
     --font-color: #432C24;
     --color-bg: #ffffff;
+    color-scheme: only light;
     --font-zen: 'Zen Dots', sans-serif;
     --font-maru: 'Zen Maru Gothic', sans-serif;
     --font-fra: 'Fraunces', serif;
@@ -1258,7 +1259,6 @@ header .nav__link {
     font-weight: 400;
     cursor: pointer;
     margin-top: 30px;
-   
 }
 
 /* FOOTER */
@@ -1621,10 +1621,8 @@ footer {
         display: none;
     }
     #guide .guide__sub-content {
-        background-color:red;
         cursor: pointer;
         position: relative;
-        border: 5px solid red;
     }
     #guide .guide__sub-content.active {
         background: var(--color-bg);
