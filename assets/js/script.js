@@ -46,28 +46,28 @@ document.querySelectorAll('.marquee__track').forEach(track => {
 
 
 //SWIPER
+window.addEventListener('load', () => swiper.update());
+window.addEventListener('resize', () => swiper.update());
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,        
-  centeredSlides: true,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  centeredSlides: false,
+  spaceBetween: 0,
   grabCursor: true,
   loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-
+  observer: true,
+  observeParents: true,
+  autoplay: { delay: 3000, disableOnInteraction: false },
+  pagination: { el: '.swiper-pagination', clickable: true, dynamicBullets: true },
   breakpoints: {
-    768: {              
-      slidesPerView: 2,
+    0: {
+      slidesPerView: 1,
+      centeredSlides: true,
+      spaceBetween: 0
     },
-    1024: {             
+    768: {
       slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: 20
     }
   }
 });
