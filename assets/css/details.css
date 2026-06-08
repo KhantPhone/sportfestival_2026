@@ -214,6 +214,9 @@ ol {
 }
 
 @media (600px <= width < 1200px) {
+    .title {
+        display: hidden;
+    }
     .contents h3 {
         font-size: 42px;
     }
@@ -552,7 +555,7 @@ footer {
     }
     .mv-container {
         height: 70vh;
-        padding-bottom: 0;
+        padding-bottom: 40;
     }
     .mv-bottom-text br {
         display: none;
