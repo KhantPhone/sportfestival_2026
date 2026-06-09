@@ -72,19 +72,24 @@ document.addEventListener('DOMContentLoaded', function () {
   const bar = document.querySelector('.switch__sticky');
   const footer = document.querySelector('footer');
   const wrap = document.querySelector('.wrap');
-
+ 
   function toggleBar() {
-    const scrolledPastHero = window.scrollY > window.innerHeight;
-    const footerTop = footer.getBoundingClientRect().top + window.scrollY;
-    const reachedFooter = window.scrollY + window.innerHeight >= footerTop;
-
+    // show after scrolling roughly half the hero height
+    const scrolledPastHero = window.scrollY > window.innerHeight * 0.5;
+ 
+    // footerTop is viewport-relative. hide only when the footer has scrolled
+    // up into the bottom 80px of the screen (≈ bar height + gap).
+    const footerTop = footer.getBoundingClientRect().top;
+    const reachedFooter = footerTop < window.innerHeight - 80;
+ 
     bar.classList.toggle('is-visible', scrolledPastHero && !reachedFooter);
   }
-
+ 
   window.addEventListener('scroll', toggleBar);
   window.addEventListener('resize', toggleBar);
   toggleBar();
-
+ 
+  // clicking a tab in the sticky bar scrolls back to the top of the content
   bar.querySelectorAll('.switch li').forEach(function (li) {
     li.addEventListener('click', function () {
       const wrapTop = wrap.getBoundingClientRect().top + window.scrollY;
