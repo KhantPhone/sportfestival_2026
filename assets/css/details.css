@@ -245,7 +245,7 @@ h3 .subtitle {
     font-size: 24px;
     font-weight: medium;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 12px;
 }
 ol {
     padding: 0;
@@ -599,7 +599,7 @@ footer {
 /* MOBILE */
 @media screen and (max-width: 998px) {
     .competitions h3 {
-        margin-top: 30px;
+        margin-top: 80px;
     }
     header .nav__logo-pc {
         display: none;
