@@ -599,7 +599,7 @@ footer {
 /* MOBILE */
 @media screen and (max-width: 998px) {
     .competitions h3 {
-        margin-top: 90px;
+        margin-top: 100px;
     }
     header .nav__logo-pc {
         display: none;
