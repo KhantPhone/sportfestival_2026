@@ -78,49 +78,49 @@ const guideItems = [
         num: "01",
         img: "./assets/images/venues/tokyo-dome-gate.webp",
         title: "朝、どのくらい余裕をもって着けばいい?",
-        body: "集合時間の 5〜15分前を目安に到着するのがおすすめ。22番ゲートはセキュリティチェックと手荷物チェックがあるので、早めに到着するように心がけよう。"
+        body: "集合時間の<span class=\"fun-highlight\">5〜15分前</span>を目安に到着するのがおすすめ。<span class=\"fun-highlight\">22番ゲート</span>はセキュリティチェックと手荷物チェックがあるので、早めに到着するように心がけよう。"
     },
     {
         num: "02",
         img: "./assets/images/venues/tokyo-dome-entrance.webp",
         title: "集合時間に遅れそう！どうしよう？",
-        body: "時間に間に合わないと感じたときは、まず担任の先生に連絡しよう。東京ドームに到着したら、22番ゲートに向かえば大丈夫。 でも、スポーツフェスティバルを存分に楽しむには遅れずに到着することも重要。時間にはくれぐれも余裕をもって。"
+        body: "時間に間に合わないと感じたときは、<span class=\"fun-highlight\">まず担任の先生に連絡</span>しよう。東京ドームに到着したら、<span class=\"fun-highlight\">22番ゲート</span>に向かえば大丈夫。 でも、スポーツフェスティバルを存分に楽しむには遅れずに到着することも重要。時間にはくれぐれも余裕をもって。"
     },
     {
         num: "03",
         img: "./assets/images/venues/tokyo-dome-stands.webp",
         title: "ずっと応援席にいてもいい?",
-        body: "もちろん大丈夫。自分のクラス座席で過ごし続けても、自由に移動しても、どちらでも自分のペースで楽しめます。"
+        body: "もちろん大丈夫。自分のクラス座席で過ごし続けても、自由に移動しても、<span class=\"fun-highlight\">どちらでも自分のペース</span>で楽しめます。"
     },
     {
         num: "04",
         img: "./assets/images/venues/tokyo-dome-store.webp",
         title: "ご飯はどこで食べる? 持参 or 売店?",
-        body: "持ち込んだ飲食物は養生シート上の指定エリアのみ可能です。昼食は事前に持参するのがおすすめ。当日は会場外への一時外出ができません。会場内に売店もありますが、軽食1店舗のみで数に限りがあるため、自宅近辺で準備してくると安心です。"
+        body: "持ち込んだ飲食物は養生シート上の指定エリアのみ可能です。昼食は事前に持参するのがおすすめ。当日は会場外への一時外出ができません。会場内に売店もありますが、<span class=\"fun-highlight\">軽食1店舗のみ</span>で数に限りがあるため、自宅近辺で準備してくると安心です。"
     },
     {
         num: "05",
         img: "./assets/images/venues/tokyo-dome-drinks.webp",
         title: "飲み物はどこで買える? 持参したほうがいい?",
-        body: "会場内に給水所が設置されています。自分のペットボトルや水筒を持ち込むこともOK(ビン・缶はNG)。心配なら、朝のうちに用意しておこう。"
+        body: "会場内に<span class=\"fun-highlight\">給水所</span>が設置されています。自分のペットボトルや水筒を持ち込むこともOK<span class=\"fun-highlight\">(ビン・缶はNG)</span>。心配なら、朝のうちに用意しておこう。"
     },
     {
         num: "06",
         img: "./assets/images/venues/tokyo-dome-seats.webp",
         title: "静かに過ごすのも、ありですか?",
-        body: "ぜんぜん、ありです。応援を全力でする人もいれば、静かにスタンドから見ている人もいる。どちらも、その人なりのスポフェスの楽しみ方です。"
+        body: "<span class=\"fun-highlight\">ぜんぜん、ありです</span>。応援を全力でする人もいれば、静かにスタンドから見ている人もいる。どちらも、<span class=\"fun-highlight\">その人なりのスポフェスの楽しみ方</span>です。"
     },
     {
         num: "07",
         img: "./assets/images/venues/tokyo-dome-quiz.webp",
         title: "動かなくても楽しめる種目はある?",
-        body: "電子学園ウルトラクイズ、応援団長は君だ!、謎解きなど、運動量を気にせず参加できる種目が用意されています。"
+        body: "あります。<span class=\"fun-highlight\">電子学園ウルトラクイズ、応援団長は君だ!、謎解き</span>など、運動量を気にせず参加できる種目が用意されています。"
     },
     {
         num: "08",
         img: "./assets/images/venues/tokyo-dome-rules.webp",
         title: "入っちゃいけない場所や、注意点ってある?",
-        body: "あります。フィールドエリアや運営スタッフ専用通路には立ち入り禁止です。案内スタッフの指示に従って行動しよう。"
+        body: "立ち入っていい場所は、22番ゲートから1塁側1階内野席スタンドとその周辺、トイレ、グランドのみです。標識や警備の先生の指示には必ず従おう。<span class=\"fun-highlight\">アクセサリーやスパイクシューズは禁止 、貴重品は各自管理</span>。何かあれば「本部」まで声をかけてください。"
     }
 ];
 
@@ -142,7 +142,7 @@ subContents.forEach((item, i) => {
             mainImg.src = d.img;
             mainNum.textContent = d.num;
             mainTitle.textContent = d.title;
-            mainBody.textContent = d.body;
+            mainBody.innerHTML = d.body; 
             mainContent.classList.remove('fading');
         }, 300);
     });

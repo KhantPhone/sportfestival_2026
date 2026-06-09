@@ -639,6 +639,12 @@ header .nav__link {
     line-height: 35px;
     font-size: var(--font-size18);
 }
+.fun-highlight {
+    font-size: var(--font-size21);
+    font-weight: 600;
+    font-style: italic;
+    color: var(--color-primary);
+}
 #guideMainContent.fading .guide__content-image-wrap img,
 #guideMainContent.fading .guide__main-title,
 #guideMainContent.fading .guide__main-body {
@@ -1064,6 +1070,7 @@ header .nav__link {
     color: var(--color-bg);
     opacity: 0.9;
 }
+
 #fun .fun__btn {
     display: inline-block;
     margin-top: 30px;
