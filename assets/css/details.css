@@ -223,18 +223,12 @@ body {
     padding: 0 8%;
 }
 .title {
-    margin: 40px auto 64px;
+    margin: 0px auto 40px;
 }
 .contents h3 {
-    max-width: 526px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 64px;
+    text-align: center;
+    font-size: 50px;
     font-weight: bold;
-    line-height: 70px;
     letter-spacing: -0.1em;
 }
 h3 .subtitle {
@@ -251,6 +245,7 @@ h3 .subtitle {
     font-size: 24px;
     font-weight: medium;
     text-align: center;
+    margin-top: 16px;
 }
 ol {
     padding: 0;
@@ -316,9 +311,6 @@ ol {
 
 @media (600px <= width < 1200px) {
    
-    .title {
-        display: hidden;
-    }
     .contents h3 {
         font-size: 42px;
     }
@@ -347,6 +339,7 @@ ol {
     }
 }
 @media (width < 600px) {
+   
     .switch {
         width: 100%;
         margin-top: 300px;
@@ -361,7 +354,7 @@ ol {
         font-size: 32px;
     }
     h3 .subtitle {
-        font-size: 14px;
+        font-size: 20px;
     }
     .section-description {
         font-size: 16px;
@@ -605,6 +598,9 @@ footer {
 
 /* MOBILE */
 @media screen and (max-width: 998px) {
+    .competitions h3 {
+        margin-top: 30px;
+    }
     header .nav__logo-pc {
         display: none;
     }
@@ -686,12 +682,15 @@ footer {
         max-width: 900px;
     }
     .mv-bottom-text h2 {
-        font-size: var(--font-size40);
+        font-size: var(--font-size30);
         font-weight: 600;
     }
     .mv-bottom-text p {
         font-size: var(--font-size18);
         font-weight: 450;
+    }
+    .title{
+        margin: 0px;
     }
     footer {
         background-color: var(--color-primary);
