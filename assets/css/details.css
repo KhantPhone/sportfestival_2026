@@ -671,7 +671,7 @@ footer {
         display: block;
         position: absolute;
         top: 20px;
-        background: url(/assets/images/icons/Mathematics.svg) var(--color-bg);
+        background: url("../images/icons/Mathematics.svg") var(--color-bg);
         padding: 15px 25px;
         border-radius: 0 20px 20px 0;
     }
@@ -680,6 +680,7 @@ footer {
         bottom: -220px;
         right: 0;
         max-width: 900px;
+        background: none;
     }
     .mv-bottom-text h2 {
         font-size: var(--font-size30);
